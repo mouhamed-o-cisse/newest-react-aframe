@@ -10,8 +10,8 @@ function Page2 (){
 
     const navigate = useNavigate();
 
-      function ijustClick (){
-          navigate('/')
+      function goPage1(){
+          navigate('/page1')
       }
 
 
@@ -20,7 +20,7 @@ function Page2 (){
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
+        transition={{ duration: 0.2 }}
         >
         <Scene cursor="rayOrigin: mouse" raycaster="objects:[clickable]" 
         device-orientation-permission-ui="
@@ -36,7 +36,7 @@ function Page2 (){
         <a-assets>
           {/* <img id="groundTexture" alt='img1' src="https://cdn.aframe.io/a-painter/images/floor.jpg"/> */}
           {/* <img id="skyTexture" alt='img2' src="https://cdn.aframe.io/a-painter/images/sky.jpg"/> */}
-          <img id="skyTexture" alt='img3' src={require('./beach.jpg')}/>
+          <img id="skyTexturep2" alt='img3' src={require('./beach.jpg')}/>
           <img id="imageTexture" alt='img4' src={require('./marker.png')}/>
         </a-assets>
 
@@ -44,15 +44,15 @@ function Page2 (){
         {/* <Entity primitive="a-light" type="ambient" color="#445451"/>
         <Entity primitive="a-light" type="point" intensity="2" position="2 4 4"/> */}
         {/* <Entity primitive="a-sky" height="2048" radius="30" src="#skyTexture" theta-length="90" width="2048"/> */}
-        <Entity primitive="a-sky"  src="#skyTexture"/>
+        <Entity primitive="a-sky"  src="#skyTexturep2"/>
         {/* <Entity particle-system={{preset: 'snow', particleCount: 2000}}/> */}
-        <Entity text={{value: 'Hello, A-Frame React!', align: 'center'}} position={{x: 0, y: 2, z: -1}} 
+        <Entity text={{value: 'Page 2222', align: 'center'}} position={{x: 0, y: 2, z: -1}} 
         
         />
 
         <Entity primitive="a-image" clickable position={{x: 0, y: 1, z: -3}} src="#imageTexture" scale="0.5 0.5 0.5"
-        animation="property: scale; to: 0.75 0.75 0.75; dur: 2000; easing: linear; elasticity: 400; delay: 0; dir: normal; loop: false;"
-         events={{click: ijustClick }}
+        animation="property: scale; to: 0.75 0.75 0.75; dur: 000; easing: linear; elasticity: 400; delay: 0; dir: normal; loop: false;"
+         events={{click: goPage1 }}
         />
 
         {/* <Entity id="box"
