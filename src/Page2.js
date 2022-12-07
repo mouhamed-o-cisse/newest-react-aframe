@@ -14,6 +14,8 @@ function Page2 (){
           navigate('/page1')
       }
 
+      
+
 
     return (
         <motion.div
@@ -22,7 +24,7 @@ function Page2 (){
         exit={{ opacity: 0 }}
         transition={{ duration: 2.5 }}
         >
-        <Scene cursor="rayOrigin: mouse" raycaster="objects:[clickable]" 
+        <Scene className="scene" cursor="rayOrigin: mouse" raycaster="objects:[clickable]" 
         // device-orientation-permission-ui="
         // enabled: true; 
         // denyButtonText: Ne pas activer; 

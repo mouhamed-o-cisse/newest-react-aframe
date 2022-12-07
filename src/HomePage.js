@@ -17,7 +17,7 @@ function HomePage (){
     }
 
     const device = document.querySelector(".a-orientation-modal");
-    const device1 = document.querySelector(".a-dialog-allow-button");
+    const device1 = document.querySelector("a-scene .a-orientation-modal");
     console.log(device)
     console.log(device1)
 
