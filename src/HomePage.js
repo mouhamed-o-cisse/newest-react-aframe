@@ -17,12 +17,12 @@ function HomePage (){
     }
 
     return (
-        <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 2.5 }}
-        >
+        // <motion.div
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // exit={{ opacity: 0 }}
+        // transition={{ duration: 2.5 }}
+        // >
         <Scene cursor="rayOrigin: mouse" raycaster="objects:[clickable]"  
          device-orientation-permission-ui="
          enabled: true; 
@@ -78,7 +78,7 @@ function HomePage (){
           {/* <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/> */}
         </Entity>
       </Scene>
-      </motion.div>
+      // </motion.div>
     );
   }
 

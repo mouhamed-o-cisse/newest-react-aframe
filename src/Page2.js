@@ -16,12 +16,12 @@ function Page2 (){
 
 
     return (
-        <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 2.5 }}
-        >
+        // <motion.div
+        // initial={{ opacity: 0 }}
+        // animate={{ opacity: 1 }}
+        // exit={{ opacity: 0 }}
+        // transition={{ duration: 2.5 }}
+        // >
         <Scene cursor="rayOrigin: mouse" raycaster="objects:[clickable]" 
         device-orientation-permission-ui="
         enabled: true; 
@@ -32,7 +32,11 @@ function Page2 (){
         mobileDesktopMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil;
         httpsMessage: Accéder à ce site via HTTPS pour passer en mode VR et accorder l'accès aux capteurs de l'appareil;
         "
+
+        
         >
+
+{/* device-orientation-permission-ui={{enabled: true, }} */}
         <a-assets>
           {/* <img id="groundTexture" alt='img1' src="https://cdn.aframe.io/a-painter/images/floor.jpg"/> */}
           {/* <img id="skyTexture" alt='img2' src="https://cdn.aframe.io/a-painter/images/sky.jpg"/> */}
@@ -71,7 +75,7 @@ function Page2 (){
           {/* <Entity primitive="a-cursor" animation__click={{property: 'scale', startEvents: 'click', from: '0.1 0.1 0.1', to: '1 1 1', dur: 150}}/> */}
         </Entity>
       </Scene>
-      </motion.div>
+      // </motion.div>
     );
   }
 
