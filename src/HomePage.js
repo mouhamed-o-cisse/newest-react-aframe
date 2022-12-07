@@ -16,6 +16,11 @@ function HomePage (){
         navigate('/page1')
     }
 
+    const device = document.querySelector(".a-orientation-modal");
+    const device1 = document.querySelector(".a-dialog-allow-button");
+    console.log(device)
+    console.log(device1)
+
     return (
         <motion.div
         initial={{ opacity: 0 }}
@@ -24,15 +29,16 @@ function HomePage (){
         transition={{ duration: 2.5 }}
         >
         <Scene cursor="rayOrigin: mouse" raycaster="objects:[clickable]"  
-         device-orientation-permission-ui="
-         enabled: true; 
-         denyButtonText: Ne pas activer; 
-         allowButtonText: Activer ; 
-         cancelButtonText: Fermer ; 
-         deviceMotionMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil ;
-         mobileDesktopMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil;
-         httpsMessage: Accéder à ce site via HTTPS pour passer en mode VR et accorder l'accès aux capteurs de l'appareil;
-         "
+        //  device-orientation-permission-ui="
+        //  enabled: true; 
+        //  denyButtonText: Ne pas activer; 
+        //  allowButtonText: Activer ; 
+        //  cancelButtonText: Fermer ; 
+        //  deviceMotionMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil ;
+        //  mobileDesktopMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil;
+        //  httpsMessage: Accéder à ce site via HTTPS pour passer en mode VR et accorder l'accès aux capteurs de l'appareil;
+        //  "
+        device-orientation-permission-ui={{enabled: true }}
         >
         <a-assets>
           {/* <img id="groundTexture" alt='img1' src="https://cdn.aframe.io/a-painter/images/floor.jpg"/> */}

@@ -23,15 +23,16 @@ function Page2 (){
         transition={{ duration: 2.5 }}
         >
         <Scene cursor="rayOrigin: mouse" raycaster="objects:[clickable]" 
-        device-orientation-permission-ui="
-        enabled: true; 
-        denyButtonText: Ne pas activer; 
-        allowButtonText: Activer ; 
-        cancelButtonText: Fermer ; 
-        deviceMotionMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil ;
-        mobileDesktopMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil;
-        httpsMessage: Accéder à ce site via HTTPS pour passer en mode VR et accorder l'accès aux capteurs de l'appareil;
-        "
+        // device-orientation-permission-ui="
+        // enabled: true; 
+        // denyButtonText: Ne pas activer; 
+        // allowButtonText: Activer ; 
+        // cancelButtonText: Fermer ; 
+        // deviceMotionMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil ;
+        // mobileDesktopMessage: Ce site immersif nécessite l'accès aux capteurs de mouvement de votre appareil;
+        // httpsMessage: Accéder à ce site via HTTPS pour passer en mode VR et accorder l'accès aux capteurs de l'appareil;
+        // "
+        device-orientation-permission-ui={{enabled: true }}
 
         
         >
